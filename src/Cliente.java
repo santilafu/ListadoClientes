@@ -1,7 +1,12 @@
+import java.util.*;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Entity
+/**
+ * Clase que representa un cliente.
+ * Que será guardado en la base de datos.
+ */
+@Entity //Esta clase se va a almacenar como entidad en ObjectDB
 public class Cliente implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
