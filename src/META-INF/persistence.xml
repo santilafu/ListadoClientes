@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             version="2.0">
+    <persistence-unit name="miBD">
+        <provider>com.objectdb.jpa.Provider</provider>
+        <class>Cliente</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="db/clientes.odb"/>
+        </properties>
+    </persistence-unit>
+</persistence>
